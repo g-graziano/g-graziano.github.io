@@ -45,6 +45,43 @@
       "image": "https://g-graziano.github.io/packsnap/logo.png"
     }
     </script>
+    
+    <!-- FAQ JSON-LD Schema for Rich Snippets -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [{
+        "@type": "Question",
+        "name": "What is PackSnap?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PackSnap is a dedicated mobile application designed for e-commerce sellers to easily record and organize packing proof videos by scanning shipping labels. It helps protect businesses from fraudulent buyer claims."
+        }
+      },{
+        "@type": "Question",
+        "name": "How does the Google Drive backup work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PackSnap connects securely to your personal Google Drive and automatically uploads your packing videos to a dedicated 'PackSnap Backups' folder. This keeps your phone storage free while securing your vital video proof in the cloud."
+        }
+      },{
+        "@type": "Question",
+        "name": "What is the Auto-Next feature?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Auto-Next feature is designed for high-speed packing. Once a packer scans a new receipt, the app instantly saves the current video and begins recording the next packaging process without requiring the packer to touch the phone screen."
+        }
+      },{
+        "@type": "Question",
+        "name": "Does PackSnap store my videos on private servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. PackSnap does not store any of your videos on its own servers. Your video proof is strictly confidential and goes directly from your mobile device to your private Google Drive."
+        }
+      }]
+    }
+    </script>
 </head>
 <body>
 
@@ -106,6 +143,32 @@
             <div class="showcase-image">
                 <!-- Using logo as a placeholder for mockup if actual app screenshots are missing -->
                 <img src="logo.png" alt="PackSnap App Preview" class="mockup" style="background:#1e293b; padding:20px; object-fit:contain;">
+            </div>
+        </section>
+
+        <section id="faq" class="faq container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>What is PackSnap?</summary>
+                    <p>PackSnap is a dedicated mobile application designed for e-commerce sellers to easily record and organize packing proof videos by scanning shipping labels. It helps protect businesses from fraudulent buyer claims.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How does the Google Drive backup work?</summary>
+                    <p>PackSnap connects securely to your personal Google Drive and automatically uploads your packing videos to a dedicated "PackSnap Backups" folder. This keeps your phone storage free while securing your vital video proof in the cloud.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>What is the Auto-Next feature?</summary>
+                    <p>The Auto-Next feature is designed for high-speed packing. Once a packer scans a new receipt, the app instantly saves the current video and begins recording the next packaging process without requiring the packer to touch the phone screen.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>Does PackSnap store my videos on private servers?</summary>
+                    <p>No. PackSnap does not store any of your videos on its own servers. Your video proof is strictly confidential and goes directly from your mobile device to your private Google Drive.</p>
+                </details>
             </div>
         </section>
     </main>
