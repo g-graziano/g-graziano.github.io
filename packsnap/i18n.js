@@ -328,7 +328,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (hasElementChildren && el.tagName === 'A' && el.querySelector('svg')) {
                        // for cta button, it has an SVG icon inside.
                        const svg = el.querySelector('svg').outerHTML;
-                       el.innerHTML = svg + '\\n                ' + translations[lang][key];
+                       el.innerHTML = svg + ' ' + translations[lang][key];
                     } else {
                         el.textContent = translations[lang][key];
                     }
