@@ -35,6 +35,44 @@ function translateHtml(html, lang) {
     const dict = translations[lang];
     if (!dict) return translated;
     
+    // Replace SEO elements
+    if (dict.seo_title) {
+        translated = translated.replace(
+            /<title>.*?<\/title>/,
+            `<title>${dict.seo_title}</title>`
+        );
+        translated = translated.replace(
+            /<meta property="og:title" content=".*?">/,
+            `<meta property="og:title" content="${dict.seo_title}">`
+        );
+        translated = translated.replace(
+            /<meta property="twitter:title" content=".*?">/,
+            `<meta property="twitter:title" content="${dict.seo_title}">`
+        );
+    }
+    
+    if (dict.seo_desc) {
+        translated = translated.replace(
+            /<meta name="description" content=".*?">/,
+            `<meta name="description" content="${dict.seo_desc}">`
+        );
+        translated = translated.replace(
+            /<meta property="og:description" content=".*?">/,
+            `<meta property="og:description" content="${dict.seo_desc}">`
+        );
+        translated = translated.replace(
+            /<meta property="twitter:description" content=".*?">/,
+            `<meta property="twitter:description" content="${dict.seo_desc}">`
+        );
+    }
+
+    if (dict.seo_keywords) {
+        translated = translated.replace(
+            /<meta name="keywords" content=".*?">/,
+            `<meta name="keywords" content="${dict.seo_keywords}">`
+        );
+    }
+    
     // Regular expression to find elements with data-i18n attribute
     // Match something like <h1 data-i18n="hero_h1">Old Text</h1>
     // We can use a simpler approach: replace the innerHTML based on the attribute
