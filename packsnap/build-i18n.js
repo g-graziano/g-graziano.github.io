@@ -54,10 +54,10 @@ function translateHtml(html, lang) {
         
         translated = translated.replace(regex, (match, openTag, content, closeTag) => {
             if (openTag.includes('<a ') && openTag.includes('cta-button')) {
-                const svgRegex = /(<svg[\\s\\S]*?<\/svg>)/;
+                const svgRegex = /(<svg[\s\S]*?<\/svg>)/;
                 const svgMatch = content.match(svgRegex);
                 if (svgMatch) {
-                    return `${openTag}\\n                ${svgMatch[1]} ${text}\\n            ${closeTag}`;
+                    return `${openTag}\n                ${svgMatch[1]} ${text}\n            ${closeTag}`;
                 }
             }
             return `${openTag}${text}${closeTag}`;
