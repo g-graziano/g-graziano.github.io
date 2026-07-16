@@ -40,7 +40,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. All rights reserved.",
         "seo_title": "PackSnap | Ecommerce Packing Recording App",
         "seo_desc": "Record, organize, and auto-backup packing proof videos with ease. Protect your online business from fraudulent buyer claims.",
-        "seo_keywords": "packsnap, ecommerce packing app, video proof, packing video recorder, google drive backup, barcode scanner for ecommerce"
+        "seo_keywords": "packsnap, ecommerce packing app, video proof, packing video recorder, google drive backup, barcode scanner for ecommerce",
+        "alt_preview": "PackSnap App Preview"
     },
     "id": {
         "nav_features": "Fitur",
@@ -83,7 +84,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. Hak cipta dilindungi undang-undang.",
         "seo_title": "PackSnap | Aplikasi Perekam Video Packing E-Commerce",
         "seo_desc": "Rekam, atur, dan cadangkan otomatis video bukti packing dengan mudah. Lindungi bisnis online Anda dari klaim pembeli yang curang.",
-        "seo_keywords": "packsnap, aplikasi packing ecommerce, bukti video, perekam video packing, cadangan google drive, pemindai barcode ecommerce"
+        "seo_keywords": "packsnap, aplikasi packing ecommerce, bukti video, perekam video packing, cadangan google drive, pemindai barcode ecommerce",
+        "alt_preview": "Pratinjau Aplikasi PackSnap"
     },
     "th": {
         "nav_features": "คุณสมบัติ",
@@ -126,7 +128,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap สงวนลิขสิทธิ์",
         "seo_title": "PackSnap | แอปบันทึกวิดีโอแพ็คของอีคอมเมิร์ซ",
         "seo_desc": "บันทึก จัดระเบียบ และสำรองข้อมูลวิดีโอหลักฐานการแพ็คอัตโนมัติ ปกป้องธุรกิจออนไลน์ของคุณจากข้อเรียกร้องที่เป็นเท็จของผู้ซื้อ",
-        "seo_keywords": "packsnap, แอปแพ็คของอีคอมเมิร์ซ, วิดีโอหลักฐาน, เครื่องบันทึกวิดีโอแพ็คของ, สำรองข้อมูล google drive, สแกนบาร์โค้ดอีคอมเมิร์ซ"
+        "seo_keywords": "packsnap, แอปแพ็คของอีคอมเมิร์ซ, วิดีโอหลักฐาน, เครื่องบันทึกวิดีโอแพ็คของ, สำรองข้อมูล google drive, สแกนบาร์โค้ดอีคอมเมิร์ซ",
+        "alt_preview": "ตัวอย่างแอป PackSnap"
     },
     "tl": {
         "nav_features": "Mga Tampok",
@@ -169,7 +172,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. All rights reserved.",
         "seo_title": "PackSnap | Ecommerce Packing Recording App",
         "seo_desc": "Madaling i-record, i-organisa, at i-auto-backup ang mga packing proof video. Protektahan ang iyong online business mula sa mga mapanlinlang na reklamo.",
-        "seo_keywords": "packsnap, ecommerce packing app, video proof, packing video recorder, google drive backup, barcode scanner para sa ecommerce"
+        "seo_keywords": "packsnap, ecommerce packing app, video proof, packing video recorder, google drive backup, barcode scanner para sa ecommerce",
+        "alt_preview": "Preview ng PackSnap App"
     },
     "vi": {
         "nav_features": "Tính Năng",
@@ -212,7 +216,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. Đã đăng ký bản quyền.",
         "seo_title": "PackSnap | Ứng Dụng Quay Video Đóng Gói Thương Mại Điện Tử",
         "seo_desc": "Ghi hình, sắp xếp, và tự động sao lưu video bằng chứng đóng gói dễ dàng. Bảo vệ doanh nghiệp trực tuyến của bạn khỏi các khiếu nại gian lận.",
-        "seo_keywords": "packsnap, ứng dụng đóng gói ecommerce, bằng chứng video, máy quay video đóng gói, sao lưu google drive, máy quét mã vạch ecommerce"
+        "seo_keywords": "packsnap, ứng dụng đóng gói ecommerce, bằng chứng video, máy quay video đóng gói, sao lưu google drive, máy quét mã vạch ecommerce",
+        "alt_preview": "Bản xem trước ứng dụng PackSnap"
     },
     "pt": {
         "nav_features": "Recursos",
@@ -255,7 +260,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. Todos os direitos reservados.",
         "seo_title": "PackSnap | App de Gravação de Embalagem para E-Commerce",
         "seo_desc": "Grave, organize e faça backup automático de vídeos de embalagem com facilidade. Proteja seu negócio online contra reclamações fraudulentas.",
-        "seo_keywords": "packsnap, app de embalagem ecommerce, prova em vídeo, gravador de vídeo de embalagem, backup do google drive, leitor de código de barras para ecommerce"
+        "seo_keywords": "packsnap, app de embalagem ecommerce, prova em vídeo, gravador de vídeo de embalagem, backup do google drive, leitor de código de barras para ecommerce",
+        "alt_preview": "Prévia do App PackSnap"
     },
     "es": {
         "nav_features": "Características",
@@ -298,7 +304,8 @@ const translations = {
         "footer_copyright": "© 2026 PackSnap. Todos los derechos reservados.",
         "seo_title": "PackSnap | App de Grabación de Empaque para E-Commerce",
         "seo_desc": "Graba, organiza y realiza copias de seguridad de videos de empaque fácilmente. Protege tu negocio en línea de reclamos fraudulentos.",
-        "seo_keywords": "packsnap, app de empaque ecommerce, prueba en video, grabadora de video de empaque, respaldo de google drive, escáner de código de barras para ecommerce"
+        "seo_keywords": "packsnap, app de empaque ecommerce, prueba en video, grabadora de video de empaque, respaldo de google drive, escáner de código de barras para ecommerce",
+        "alt_preview": "Vista previa de la App PackSnap"
     }
 };
 

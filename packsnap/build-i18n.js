@@ -73,6 +73,44 @@ function translateHtml(html, lang) {
         );
     }
     
+    // Replace canonical URL for language subdirectories
+    translated = translated.replace(
+        '<link rel="canonical" href="https://g-graziano.github.io/packsnap/">',
+        `<link rel="canonical" href="https://g-graziano.github.io/packsnap/${lang}/">`
+    );
+
+    // Replace alt text for images
+    if (dict.alt_preview) {
+        translated = translated.replace(
+            /alt="PackSnap App Preview"/g,
+            `alt="${dict.alt_preview}"`
+        );
+    }
+
+    // Update JSON-LD schemas robustly
+    const jsonLdRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
+    translated = translated.replace(jsonLdRegex, (match, jsonString) => {
+        try {
+            const data = JSON.parse(jsonString);
+            if (data['@type'] === 'SoftwareApplication' && dict.seo_desc) {
+                data.description = dict.seo_desc;
+            } else if (data['@type'] === 'FAQPage' && data.mainEntity && data.mainEntity.length >= 4) {
+                data.mainEntity[0].name = dict.faq_1_q;
+                data.mainEntity[0].acceptedAnswer.text = dict.faq_1_a;
+                data.mainEntity[1].name = dict.faq_2_q;
+                data.mainEntity[1].acceptedAnswer.text = dict.faq_2_a;
+                data.mainEntity[2].name = dict.faq_3_q;
+                data.mainEntity[2].acceptedAnswer.text = dict.faq_3_a;
+                data.mainEntity[3].name = dict.faq_4_q;
+                data.mainEntity[3].acceptedAnswer.text = dict.faq_4_a;
+            }
+            return `<script type="application/ld+json">\n    ${JSON.stringify(data, null, 2)}\n    </script>`;
+        } catch (e) {
+            console.error("JSON-LD parsing error", e);
+            return match;
+        }
+    });
+    
     // Regular expression to find elements with data-i18n attribute
     // Match something like <h1 data-i18n="hero_h1">Old Text</h1>
     // We can use a simpler approach: replace the innerHTML based on the attribute
