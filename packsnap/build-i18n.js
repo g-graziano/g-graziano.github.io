@@ -86,6 +86,14 @@ function translateHtml(html, lang) {
             `alt="${dict.alt_preview}"`
         );
     }
+    
+    // Replace aria labels
+    if (dict.aria_lang_select) {
+        translated = translated.replace(
+            /aria-label="Select Language"/g,
+            `aria-label="${dict.aria_lang_select}"`
+        );
+    }
 
     // Update JSON-LD schemas robustly
     const jsonLdRegex = /<script type="application\/ld\+json">([\s\S]*?)<\/script>/g;
