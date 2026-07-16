@@ -281,68 +281,66 @@ const translations = {
     }
 };
 
-document.addEventListener('DOMContentLoaded', () => {
-    const defaultLang = 'en';
-    const supportedLangs = ['en', 'id', 'th', 'tl', 'vi', 'pt', 'es'];
-    
-    function getInitialLanguage() {
-        const savedLang = localStorage.getItem('packsnap_lang');
-        if (savedLang && supportedLangs.includes(savedLang)) {
-            return savedLang;
-        }
-        
-        const browserLang = navigator.language.slice(0, 2).toLowerCase();
-        if (browserLang === 'pt') return 'pt';
-        if (browserLang === 'es') return 'es';
-        
-        if (supportedLangs.includes(browserLang)) {
-            return browserLang;
-        }
-        return defaultLang;
-    }
+if (typeof module !== 'undefined' && module.exports) {
+    module.exports = translations;
+}
 
-    let currentLang = getInitialLanguage();
-
-    function setLanguage(lang) {
-        if (!supportedLangs.includes(lang)) lang = defaultLang;
+if (typeof window !== 'undefined') {
+    document.addEventListener('DOMContentLoaded', () => {
+        const defaultLang = 'en';
+        const supportedLangs = ['en', 'id', 'th', 'tl', 'vi', 'pt', 'es'];
         
-        currentLang = lang;
-        localStorage.setItem('packsnap_lang', lang);
-        document.documentElement.lang = lang;
-        
-        const langSelect = document.getElementById('language-select');
-        if (langSelect) langSelect.value = lang;
-
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (translations[lang] && translations[lang][key]) {
-                if (key === 'hero_h1') {
-                    el.innerHTML = translations[lang][key];
-                } else if (el.tagName === 'SUMMARY') {
-                    el.textContent = translations[lang][key];
-                } else {
-                    // check if there are child nodes that are not text that we need to preserve, like svgs
-                    const childNodes = Array.from(el.childNodes);
-                    const hasElementChildren = childNodes.some(node => node.nodeType === Node.ELEMENT_NODE);
-                    
-                    if (hasElementChildren && el.tagName === 'A' && el.querySelector('svg')) {
-                       // for cta button, it has an SVG icon inside.
-                       const svg = el.querySelector('svg').outerHTML;
-                       el.innerHTML = svg + ' ' + translations[lang][key];
-                    } else {
-                        el.textContent = translations[lang][key];
-                    }
-                }
+        function getInitialLanguage() {
+            const savedLang = localStorage.getItem('packsnap_lang');
+            if (savedLang && supportedLangs.includes(savedLang)) {
+                return savedLang;
             }
-        });
-    }
+            
+            const browserLang = navigator.language.slice(0, 2).toLowerCase();
+            if (browserLang === 'pt') return 'pt';
+            if (browserLang === 'es') return 'es';
+            
+            if (supportedLangs.includes(browserLang)) {
+                return browserLang;
+            }
+            return defaultLang;
+        }
 
-    const langSelect = document.getElementById('language-select');
-    if (langSelect) {
-        langSelect.addEventListener('change', (e) => {
-            setLanguage(e.target.value);
-        });
-    }
-
-    setLanguage(currentLang);
-});
+        // Redirect to the correct language folder if we are at the root
+        const currentPath = window.location.pathname;
+        const isRoot = currentPath.endsWith('/packsnap/') || currentPath.endsWith('/packsnap/index.html');
+        
+        if (isRoot) {
+            const initialLang = getInitialLanguage();
+            if (initialLang !== 'en') {
+                window.location.href = `/packsnap/${initialLang}/`;
+            }
+        }
+        
+        // Determine the current language based on URL
+        let currentLang = 'en';
+        for (const lang of supportedLangs) {
+            if (lang !== 'en' && currentPath.includes(`/packsnap/${lang}/`)) {
+                currentLang = lang;
+                break;
+            }
+        }
+        
+        // Set language switcher value
+        const langSelect = document.getElementById('language-select');
+        if (langSelect) {
+            langSelect.value = currentLang;
+            
+            langSelect.addEventListener('change', (e) => {
+                const selectedLang = e.target.value;
+                localStorage.setItem('packsnap_lang', selectedLang);
+                
+                if (selectedLang === 'en') {
+                    window.location.href = '/packsnap/';
+                } else {
+                    window.location.href = `/packsnap/${selectedLang}/`;
+                }
+            });
+        }
+    });
+}

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="pt">
+<head>\n    <base href="../">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="PackSnap is the ultimate mobile app for e-commerce sellers to record, organize, and auto-backup packing proof videos. Protect your business against fraudulent claims easily.">
@@ -104,8 +104,8 @@
                 <div class="logo-text">PackSnap</div>
             </div>
             <nav style="display: flex; align-items: center; gap: 20px;">
-                <a href="#features" data-i18n="nav_features">Features</a>
-                <a href="#how-it-works" data-i18n="nav_how_it_works">How it Works</a>
+                <a href="#features" data-i18n="nav_features">Recursos</a>
+                <a href="#how-it-works" data-i18n="nav_how_it_works">Como Funciona</a>
                 <a href="#faq" data-i18n="nav_faq">FAQ</a>
                 <select id="language-select" style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255,255,255,0.2); border-radius: 8px; padding: 6px 10px; font-family: inherit; outline: none; cursor: pointer;">
                     <option value="en" style="color: black;">English</option>
@@ -113,7 +113,7 @@
                     <option value="th" style="color: black;">ภาษาไทย</option>
                     <option value="tl" style="color: black;">Tagalog (Filipinas)</option>
                     <option value="vi" style="color: black;">Tiếng Việt</option>
-                    <option value="pt" style="color: black;">Português (Brasil)</option>
+                    <option value="pt" selected style="color: black;">Português (Brasil)</option>
                     <option value="es" style="color: black;">Español</option>
                 </select>
             </nav>
@@ -122,62 +122,59 @@
 
     <main>
         <section class="hero container">
-            <h1 data-i18n="hero_h1">The Ultimate <span>Video Proofing</span> Tool for E-Commerce Sellers</h1>
-            <p data-i18n="hero_p">Record, organize, and automatically backup packing proof videos by simply scanning a barcode. Protect your business from fraudulent claims today.</p>
+            <h1 data-i18n="hero_h1">A Melhor Ferramenta de <span>Prova em Vídeo</span> para Vendedores de E-Commerce</span> Tool for E-Commerce Sellers</h1>
+            <p data-i18n="hero_p">Grave, organize e faça backup automático de vídeos de embalagem simplesmente escaneando um código de barras. Proteja seu negócio de fraudes hoje mesmo.</p>
             
-            <a href="https://play.google.com/store/apps/details?id=com.packsnap.app" class="cta-button" target="_blank" rel="noopener noreferrer" data-i18n="hero_cta">
-                <svg class="cta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5 2.5v19l14-9.5-14-9.5z"/>
-                </svg>
+            <a href="https://play.google.com/store/apps/details?id=com.packsnap.app" class="cta-button" target="_blank" rel="noopener noreferrer" data-i18n="hero_cta">Baixar no Google Play</svg>
                 Download on Google Play
             </a>
         </section>
 
         <section id="features" class="features container">
-            <h2 class="section-title" data-i18n="feat_title">Why E-Commerce Sellers Choose PackSnap</h2>
+            <h2 class="section-title" data-i18n="feat_title">Por Que os Vendedores Escolhem o PackSnap</h2>
             
             <div class="features-grid">
                 <article class="feature-card">
                     <div class="feature-icon">📸</div>
-                    <h3 data-i18n="feat_1_title">Smart Barcode Scanning</h3>
-                    <p data-i18n="feat_1_p">Simply scan the shipping label (Resi) before packing. PackSnap automatically names and categorizes your video based on the receipt number.</p>
+                    <h3 data-i18n="feat_1_title">Leitura Inteligente de Código de Barras</h3>
+                    <p data-i18n="feat_1_p">Basta escanear a etiqueta de envio antes de embalar. O PackSnap nomeia e categoriza seu vídeo automaticamente com base no número do rastreio.</p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-icon">☁️</div>
-                    <h3 data-i18n="feat_2_title">Google Drive Auto-Backup</h3>
-                    <p data-i18n="feat_2_p">Stop worrying about full phone storage. PackSnap seamlessly backs up heavy video files to a dedicated folder in your Google Drive automatically.</p>
+                    <h3 data-i18n="feat_2_title">Backup Automático no Google Drive</h3>
+                    <p data-i18n="feat_2_p">Pare de se preocupar com armazenamento cheio. O PackSnap faz backup contínuo de vídeos pesados em uma pasta dedicada no seu Google Drive.</p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-icon">🛡️</div>
-                    <h3 data-i18n="feat_3_title">Fraud Protection</h3>
-                    <p data-i18n="feat_3_p">Always have concrete video evidence ready to dispute false claims of missing or damaged items. Secure your business revenue and seller rating.</p>
+                    <h3 data-i18n="feat_3_title">Proteção Contra Fraudes</h3>
+                    <p data-i18n="feat_3_p">Tenha sempre evidências em vídeo prontas para contestar falsas alegações de itens faltando. Proteja a receita e a reputação do seu negócio.</p>
                 </article>
             </div>
         </section>
 
         <section id="how-it-works" class="how-it-works">
             <div class="container">
-                <h2 class="section-title" data-i18n="how_title">How PackSnap Works</h2>
+                <h2 class="section-title" data-i18n="how_title">Como o PackSnap Funciona</h2>
                 
                 <div class="steps-grid">
                     <article class="step-card">
                         <div class="step-number">01</div>
-                        <h3 data-i18n="how_1_title">Scan Shipping Label</h3>
-                        <p data-i18n="how_1_p">Open the camera and scan the barcode or receipt number (Resi) on your package. PackSnap instantly reads it.</p>
+                        <h3 data-i18n="how_1_title">Escaneie a Etiqueta</h3>
+                        <p data-i18n="how_1_p">Abra a câmera e escaneie o código de barras no pacote. O PackSnap o lê instantaneamente.</p>
                     </article>
 
                     <article class="step-card">
                         <div class="step-number">02</div>
-                        <h3 data-i18n="how_2_title">Record the Packing</h3>
-                        <p data-i18n="how_2_p">Pack the order under the camera. The app automatically starts recording and names the file with the receipt number.</p>
+                        <h3 data-i18n="how_2_title">Grave a Embalagem</h3>
+                        <p data-i18n="how_2_p">Embale o pedido sob a câmera. O app inicia a gravação e nomeia o arquivo automaticamente com o código de rastreio.</p>
                     </article>
 
                     <article class="step-card">
                         <div class="step-number">03</div>
-                        <h3 data-i18n="how_3_title">Instant Cloud Sync</h3>
-                        <p data-i18n="how_3_p">For Pro users, the completed video is automatically uploaded to a dedicated folder in your Google Drive. No local storage wasted.</p>
+                        <h3 data-i18n="how_3_title">Sincronização Instantânea na Nuvem</h3>
+                        <p data-i18n="how_3_p">Para usuários Pro, o vídeo concluído é automaticamente enviado para o seu Google Drive. Nenhum armazenamento local é desperdiçado.</p>
                     </article>
                 </div>
             </div>
@@ -185,9 +182,9 @@
 
         <section class="showcase container">
             <div class="showcase-text">
-                <h2 data-i18n="show_title">Effortless Workflow</h2>
-                <p data-i18n="show_p1">Designed for fast-paced packing operations. The seamless Auto-Next feature allows packers to continue working without touching the screen. Just scan, pack, and the video is saved.</p>
-                <p data-i18n="show_p2">Every video is safely organized, making it searchable by receipt number whenever a buyer files a complaint.</p>
+                <h2 data-i18n="show_title">Fluxo de Trabalho Ágil</h2>
+                <p data-i18n="show_p1">Criado para operações de embalagem em ritmo acelerado. O recurso Auto-Next permite que embaladores trabalhem sem tocar na tela. É só escanear, embalar, e o vídeo é salvo.</p>
+                <p data-i18n="show_p2">Cada vídeo é organizado com segurança, facilitando a busca pelo código do rastreio sempre que um cliente faz uma reclamação.</p>
             </div>
             <div class="showcase-image">
                 <!-- Using logo as a placeholder for mockup if actual app screenshots are missing -->
@@ -196,27 +193,27 @@
         </section>
 
         <section id="faq" class="faq container">
-            <h2 class="section-title" data-i18n="faq_title">Frequently Asked Questions</h2>
+            <h2 class="section-title" data-i18n="faq_title">Perguntas Frequentes</h2>
             
             <div class="faq-list">
                 <details class="faq-item">
-                    <summary data-i18n="faq_1_q">What is PackSnap?</summary>
-                    <p data-i18n="faq_1_a">PackSnap is a dedicated mobile application designed for e-commerce sellers to easily record and organize packing proof videos by scanning shipping labels. It helps protect businesses from fraudulent buyer claims.</p>
+                    <summary data-i18n="faq_1_q">O que é o PackSnap?</summary>
+                    <p data-i18n="faq_1_a">PackSnap é um app móvel dedicado a vendedores de e-commerce para facilmente gravar e organizar vídeos de embalagem escaneando etiquetas. Ajuda a proteger contra fraudes.</p>
                 </details>
 
                 <details class="faq-item">
-                    <summary data-i18n="faq_2_q">How does the Google Drive backup work?</summary>
-                    <p data-i18n="faq_2_a">PackSnap connects securely to your personal Google Drive and automatically uploads your packing videos to a dedicated "PackSnap Backups" folder. This keeps your phone storage free while securing your vital video proof in the cloud.</p>
+                    <summary data-i18n="faq_2_q">Como funciona o backup no Google Drive?</summary>
+                    <p data-i18n="faq_2_a">O PackSnap conecta-se com segurança ao seu Google Drive e envia os vídeos para a pasta 'PackSnap Backups'. Isso economiza o armazenamento do seu celular.</p>
                 </details>
 
                 <details class="faq-item">
-                    <summary data-i18n="faq_3_q">What is the difference between PackSnap Free and Pro?</summary>
-                    <p data-i18n="faq_3_a">The Free version is ad-supported and allows you to scan shipping labels and record packing proof videos locally on your device. The Pro version provides a completely ad-free experience and unlocks cloud backups alongside advanced automation: automatic Google Drive sync, high-speed Auto-Next packing workflow, Auto-Dim screen for battery saving, silent video recording (mute microphone), forced beep confirmation volume in noisy warehouses, auto-deletion of old local files (7/14/30 days), packer team member management, and detailed packing performance reports.</p>
+                    <summary data-i18n="faq_3_q">Qual é a diferença entre a versão Grátis e Pro?</summary>
+                    <p data-i18n="faq_3_a">A versão grátis tem anúncios e gravação local. A Pro não tem anúncios, desbloqueia backups em nuvem, recurso Auto-Next, Auto-Dim, gravação silenciosa, bipe alto, deleção automática de arquivos antigos, gestão de equipe e relatórios.</p>
                 </details>
 
                 <details class="faq-item">
-                    <summary data-i18n="faq_4_q">Does PackSnap store my videos on private servers?</summary>
-                    <p data-i18n="faq_4_a">No. PackSnap does not store any of your videos on its own servers. Your video proof is strictly confidential and goes directly from your mobile device to your private Google Drive.</p>
+                    <summary data-i18n="faq_4_q">O PackSnap armazena meus vídeos em servidores próprios?</summary>
+                    <p data-i18n="faq_4_a">Não. O PackSnap não armazena vídeos em seus servidores. Suas evidências são confidenciais e vão direto do seu dispositivo para o seu Google Drive privado.</p>
                 </details>
             </div>
         </section>
@@ -227,24 +224,24 @@
             <div class="footer-content">
                 <div class="footer-col">
                     <h4>PackSnap</h4>
-                    <p style="color:var(--text-muted); font-size:0.9rem;" data-i18n="footer_desc">Empowering online sellers with bulletproof video evidence.</p>
+                    <p style="color:var(--text-muted); font-size:0.9rem;" data-i18n="footer_desc">Empoderando vendedores online com evidências em vídeo infalíveis.</p>
                 </div>
                 <div class="footer-col">
                     <h4 data-i18n="footer_legal">Legal</h4>
                     <ul>
-                        <li><a href="privacy-policy.html" data-i18n="footer_privacy">Privacy Policy</a></li>
-                        <li><a href="terms-of-service.html" data-i18n="footer_tos">Terms of Service</a></li>
+                        <li><a href="privacy-policy.html" data-i18n="footer_privacy">Política de Privacidade</a></li>
+                        <li><a href="terms-of-service.html" data-i18n="footer_tos">Termos de Serviço</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4 data-i18n="footer_support">Support</h4>
+                    <h4 data-i18n="footer_support">Suporte</h4>
                     <ul>
                         <li><a href="mailto:golekduitdewe@gmail.com">golekduitdewe@gmail.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p data-i18n="footer_copyright">&copy; 2026 PackSnap. All rights reserved.</p>
+                <p data-i18n="footer_copyright">© 2026 PackSnap. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
