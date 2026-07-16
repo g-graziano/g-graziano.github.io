@@ -1,0 +1,348 @@
+const translations = {
+    "en": {
+        "nav_features": "Features",
+        "nav_how_it_works": "How it Works",
+        "nav_faq": "FAQ",
+        "hero_h1": "The Ultimate <span>Video Proofing</span> Tool for E-Commerce Sellers",
+        "hero_p": "Record, organize, and automatically backup packing proof videos by simply scanning a barcode. Protect your business from fraudulent claims today.",
+        "hero_cta": "Download on Google Play",
+        "feat_title": "Why E-Commerce Sellers Choose PackSnap",
+        "feat_1_title": "Smart Barcode Scanning",
+        "feat_1_p": "Simply scan the shipping label (Resi) before packing. PackSnap automatically names and categorizes your video based on the receipt number.",
+        "feat_2_title": "Google Drive Auto-Backup",
+        "feat_2_p": "Stop worrying about full phone storage. PackSnap seamlessly backs up heavy video files to a dedicated folder in your Google Drive automatically.",
+        "feat_3_title": "Fraud Protection",
+        "feat_3_p": "Always have concrete video evidence ready to dispute false claims of missing or damaged items. Secure your business revenue and seller rating.",
+        "how_title": "How PackSnap Works",
+        "how_1_title": "Scan Shipping Label",
+        "how_1_p": "Open the camera and scan the barcode or receipt number (Resi) on your package. PackSnap instantly reads it.",
+        "how_2_title": "Record the Packing",
+        "how_2_p": "Pack the order under the camera. The app automatically starts recording and names the file with the receipt number.",
+        "how_3_title": "Instant Cloud Sync",
+        "how_3_p": "For Pro users, the completed video is automatically uploaded to a dedicated folder in your Google Drive. No local storage wasted.",
+        "show_title": "Effortless Workflow",
+        "show_p1": "Designed for fast-paced packing operations. The seamless Auto-Next feature allows packers to continue working without touching the screen. Just scan, pack, and the video is saved.",
+        "show_p2": "Every video is safely organized, making it searchable by receipt number whenever a buyer files a complaint.",
+        "faq_title": "Frequently Asked Questions",
+        "faq_1_q": "What is PackSnap?",
+        "faq_1_a": "PackSnap is a dedicated mobile application designed for e-commerce sellers to easily record and organize packing proof videos by scanning shipping labels. It helps protect businesses from fraudulent buyer claims.",
+        "faq_2_q": "How does the Google Drive backup work?",
+        "faq_2_a": "PackSnap connects securely to your personal Google Drive and automatically uploads your packing videos to a dedicated 'PackSnap Backups' folder. This keeps your phone storage free while securing your vital video proof in the cloud.",
+        "faq_3_q": "What is the difference between PackSnap Free and Pro?",
+        "faq_3_a": "The Free version is ad-supported and allows you to scan shipping labels and record packing proof videos locally on your device. The Pro version provides a completely ad-free experience and unlocks cloud backups alongside advanced automation: automatic Google Drive sync, high-speed Auto-Next packing workflow, Auto-Dim screen for battery saving, silent video recording (mute microphone), forced beep confirmation volume in noisy warehouses, auto-deletion of old local files (7/14/30 days), packer team member management, and detailed packing performance reports.",
+        "faq_4_q": "Does PackSnap store my videos on private servers?",
+        "faq_4_a": "No. PackSnap does not store any of your videos on its own servers. Your video proof is strictly confidential and goes directly from your mobile device to your private Google Drive.",
+        "footer_desc": "Empowering online sellers with bulletproof video evidence.",
+        "footer_legal": "Legal",
+        "footer_privacy": "Privacy Policy",
+        "footer_tos": "Terms of Service",
+        "footer_support": "Support",
+        "footer_copyright": "© 2026 PackSnap. All rights reserved."
+    },
+    "id": {
+        "nav_features": "Fitur",
+        "nav_how_it_works": "Cara Kerja",
+        "nav_faq": "FAQ",
+        "hero_h1": "Alat <span>Bukti Video</span> Terbaik untuk Penjual E-Commerce",
+        "hero_p": "Rekam, atur, dan cadangkan otomatis video bukti packing hanya dengan memindai barcode. Lindungi bisnis Anda dari klaim palsu hari ini.",
+        "hero_cta": "Unduh di Google Play",
+        "feat_title": "Mengapa Penjual E-Commerce Memilih PackSnap",
+        "feat_1_title": "Pemindaian Barcode Pintar",
+        "feat_1_p": "Cukup pindai label pengiriman (Resi) sebelum packing. PackSnap secara otomatis menamai dan mengkategorikan video Anda berdasarkan nomor resi.",
+        "feat_2_title": "Cadangan Otomatis Google Drive",
+        "feat_2_p": "Berhenti khawatir penyimpanan ponsel penuh. PackSnap mencadangkan file video besar secara otomatis ke folder khusus di Google Drive Anda.",
+        "feat_3_title": "Perlindungan Penipuan",
+        "feat_3_p": "Selalu miliki bukti video kuat yang siap digunakan untuk membantah klaim palsu atas barang hilang atau rusak. Amankan pendapatan dan rating toko Anda.",
+        "how_title": "Cara Kerja PackSnap",
+        "how_1_title": "Pindai Label Pengiriman",
+        "how_1_p": "Buka kamera dan pindai barcode atau nomor resi di paket Anda. PackSnap langsung membacanya.",
+        "how_2_title": "Rekam Packing",
+        "how_2_p": "Kemas pesanan di bawah kamera. Aplikasi secara otomatis mulai merekam dan menamai file dengan nomor resi.",
+        "how_3_title": "Sinkronisasi Cloud Instan",
+        "how_3_p": "Untuk pengguna Pro, video yang selesai otomatis diunggah ke folder khusus di Google Drive Anda. Tidak ada memori ponsel yang terbuang.",
+        "show_title": "Alur Kerja Mudah",
+        "show_p1": "Dirancang untuk operasi packing yang cepat. Fitur Auto-Next memungkinkan tim packer terus bekerja tanpa menyentuh layar. Cukup pindai, packing, dan video tersimpan.",
+        "show_p2": "Setiap video diatur dengan aman, membuatnya mudah dicari berdasarkan nomor resi setiap kali pembeli mengajukan keluhan.",
+        "faq_title": "Pertanyaan yang Sering Diajukan",
+        "faq_1_q": "Apa itu PackSnap?",
+        "faq_1_a": "PackSnap adalah aplikasi seluler khusus yang dirancang untuk penjual e-commerce guna memudahkan perekaman dan pengorganisasian video bukti packing dengan memindai label pengiriman. Ini membantu melindungi bisnis dari klaim pembeli yang curang.",
+        "faq_2_q": "Bagaimana cara kerja cadangan Google Drive?",
+        "faq_2_a": "PackSnap terhubung secara aman ke Google Drive pribadi Anda dan otomatis mengunggah video packing Anda ke folder khusus 'PackSnap Backups'. Ini membuat penyimpanan ponsel Anda tetap lega sambil mengamankan bukti video penting Anda di cloud.",
+        "faq_3_q": "Apa perbedaan antara PackSnap Gratis dan Pro?",
+        "faq_3_a": "Versi Gratis didukung iklan dan memungkinkan Anda memindai serta merekam video packing di memori lokal. Versi Pro memberikan pengalaman tanpa iklan sepenuhnya dan mengaktifkan cadangan cloud serta otomatisasi canggih: sinkronisasi otomatis Google Drive, alur kerja Auto-Next yang cepat, Auto-Dim layar penghemat baterai, rekam video bisu, volume beep paksa, hapus otomatis file lokal (7/14/30 hari), manajemen tim packer, dan laporan performa packing.",
+        "faq_4_q": "Apakah PackSnap menyimpan video saya di server privat?",
+        "faq_4_a": "Tidak. PackSnap tidak menyimpan satu pun video Anda di servernya sendiri. Bukti video Anda sangat rahasia dan langsung menuju dari perangkat Anda ke Google Drive pribadi Anda.",
+        "footer_desc": "Memberdayakan penjual online dengan bukti video yang kuat.",
+        "footer_legal": "Hukum",
+        "footer_privacy": "Kebijakan Privasi",
+        "footer_tos": "Ketentuan Layanan",
+        "footer_support": "Dukungan",
+        "footer_copyright": "© 2026 PackSnap. Hak cipta dilindungi undang-undang."
+    },
+    "th": {
+        "nav_features": "คุณสมบัติ",
+        "nav_how_it_works": "วิธีการทำงาน",
+        "nav_faq": "คำถามที่พบบ่อย",
+        "hero_h1": "เครื่องมือ <span>หลักฐานวิดีโอ</span> ระดับสุดยอดสำหรับผู้ขายอีคอมเมิร์ซ",
+        "hero_p": "บันทึก จัดระเบียบ และสำรองข้อมูลวิดีโอหลักฐานการแพ็คโดยอัตโนมัติเพียงสแกนบาร์โค้ด ปกป้องธุรกิจของคุณจากการเรียกร้องที่เป็นเท็จตั้งแต่วันนี้",
+        "hero_cta": "ดาวน์โหลดบน Google Play",
+        "feat_title": "ทำไมผู้ขายอีคอมเมิร์ซถึงเลือก PackSnap",
+        "feat_1_title": "การสแกนบาร์โค้ดอัจฉริยะ",
+        "feat_1_p": "เพียงสแกนใบปะหน้าพัสดุก่อนแพ็ค PackSnap จะตั้งชื่อและจัดหมวดหมู่วิดีโอของคุณอัตโนมัติตามหมายเลขพัสดุ",
+        "feat_2_title": "สำรองข้อมูล Google Drive อัตโนมัติ",
+        "feat_2_p": "เลิกกังวลเรื่องพื้นที่โทรศัพท์เต็ม PackSnap จะสำรองไฟล์วิดีโอขนาดใหญ่ไปยังโฟลเดอร์เฉพาะใน Google Drive ของคุณโดยอัตโนมัติ",
+        "feat_3_title": "ป้องกันการฉ้อโกง",
+        "feat_3_p": "มีหลักฐานวิดีโอที่ชัดเจนพร้อมเสมอเพื่อโต้แย้งข้อเรียกร้องที่เป็นเท็จเรื่องของหายหรือชำรุด ปกป้องรายได้และคะแนนร้านค้าของคุณ",
+        "how_title": "PackSnap ทำงานอย่างไร",
+        "how_1_title": "สแกนใบปะหน้าพัสดุ",
+        "how_1_p": "เปิดกล้องและสแกนบาร์โค้ดหรือหมายเลขพัสดุของคุณ PackSnap จะอ่านทันที",
+        "how_2_title": "บันทึกการแพ็ค",
+        "how_2_p": "แพ็คของใต้กล้อง แอปจะเริ่มบันทึกอัตโนมัติและตั้งชื่อไฟล์ตามหมายเลขพัสดุ",
+        "how_3_title": "ซิงค์คลาวด์ทันที",
+        "how_3_p": "สำหรับผู้ใช้ Pro วิดีโอที่เสร็จแล้วจะถูกอัปโหลดไปยังโฟลเดอร์เฉพาะใน Google Drive อัตโนมัติ ไม่เปลืองพื้นที่เครื่อง",
+        "show_title": "ขั้นตอนการทำงานที่ราบรื่น",
+        "show_p1": "ออกแบบมาสำหรับการแพ็คที่รวดเร็ว ฟีเจอร์ Auto-Next ช่วยให้คนแพ็คทำงานต่อเนื่องได้โดยไม่ต้องแตะหน้าจอ แค่สแกน แพ็ค แล้ววิดีโอก็ถูกบันทึก",
+        "show_p2": "ทุกวิดีโอถูกจัดเก็บอย่างปลอดภัย ทำให้สามารถค้นหาจากหมายเลขพัสดุได้ทุกครั้งที่ผู้ซื้อร้องเรียน",
+        "faq_title": "คำถามที่พบบ่อย",
+        "faq_1_q": "PackSnap คืออะไร?",
+        "faq_1_a": "PackSnap เป็นแอปพลิเคชันมือถือที่ออกแบบมาเพื่อผู้ขายอีคอมเมิร์ซโดยเฉพาะ เพื่อบันทึกและจัดระเบียบวิดีโอหลักฐานการแพ็คได้ง่ายๆ ด้วยการสแกนบาร์โค้ด ช่วยปกป้องธุรกิจจากข้อเรียกร้องเท็จ",
+        "faq_2_q": "การสำรองข้อมูล Google Drive ทำงานอย่างไร?",
+        "faq_2_a": "PackSnap เชื่อมต่ออย่างปลอดภัยกับ Google Drive ของคุณและอัปโหลดวิดีโอการแพ็คไปยังโฟลเดอร์ 'PackSnap Backups' โดยอัตโนมัติ ทำให้พื้นที่โทรศัพท์ว่างและเก็บหลักฐานสำคัญบนคลาวด์",
+        "faq_3_q": "ความแตกต่างระหว่าง PackSnap ฟรีและ Pro คืออะไร?",
+        "faq_3_a": "เวอร์ชันฟรีมีโฆษณาและอนุญาตให้คุณสแกนและบันทึกวิดีโอในเครื่อง เวอร์ชัน Pro มอบประสบการณ์ที่ไม่มีโฆษณาและปลดล็อกการสำรองข้อมูลคลาวด์และระบบอัตโนมัติ: ซิงค์ Google Drive, ฟีเจอร์ Auto-Next, หน้าจอ Auto-Dim, บันทึกวิดีโอแบบไม่มีเสียง, เร่งเสียงบี๊บยืนยัน, ลบไฟล์เก่าอัตโนมัติ และรายงานประสิทธิภาพ",
+        "faq_4_q": "PackSnap เก็บวิดีโอของฉันไว้บนเซิร์ฟเวอร์ส่วนตัวหรือไม่?",
+        "faq_4_a": "ไม่ PackSnap ไม่ได้เก็บวิดีโอใดๆ ของคุณไว้บนเซิร์ฟเวอร์ของตัวเอง วิดีโอของคุณเป็นความลับและถูกส่งตรงไปยัง Google Drive ส่วนตัวของคุณ",
+        "footer_desc": "เสริมพลังให้ผู้ขายออนไลน์ด้วยหลักฐานวิดีโอที่แน่นหนา",
+        "footer_legal": "กฎหมาย",
+        "footer_privacy": "นโยบายความเป็นส่วนตัว",
+        "footer_tos": "เงื่อนไขการให้บริการ",
+        "footer_support": "สนับสนุน",
+        "footer_copyright": "© 2026 PackSnap สงวนลิขสิทธิ์"
+    },
+    "tl": {
+        "nav_features": "Mga Tampok",
+        "nav_how_it_works": "Paano Gumagana",
+        "nav_faq": "FAQ",
+        "hero_h1": "Ang Pinakamagandang <span>Video Proofing</span> Tool para sa E-Commerce Sellers",
+        "hero_p": "I-record, i-organisa, at i-auto-backup ang mga packing proof video sa pamamagitan lamang ng pag-scan ng barcode. Protektahan ang iyong negosyo mula sa panloloko ngayon.",
+        "hero_cta": "I-download sa Google Play",
+        "feat_title": "Bakit PackSnap ang Pinipili ng E-Commerce Sellers",
+        "feat_1_title": "Matalinong Barcode Scanning",
+        "feat_1_p": "I-scan lang ang shipping label bago mag-pack. Kusang pinapangalanan at inaayos ng PackSnap ang iyong video base sa resibo number.",
+        "feat_2_title": "Google Drive Auto-Backup",
+        "feat_2_p": "Huwag nang mag-alala sa punong storage. Kusang bina-backup ng PackSnap ang mabibigat na video file sa iyong Google Drive.",
+        "feat_3_title": "Proteksyon sa Panloloko",
+        "feat_3_p": "Laging may matibay na video ebidensya na handang ipanlaban sa maling reklamo na may nawawala o sira. Protektahan ang kita ng negosyo mo.",
+        "how_title": "Paano Gumagana ang PackSnap",
+        "how_1_title": "I-scan ang Shipping Label",
+        "how_1_p": "Buksan ang camera at i-scan ang barcode sa iyong package. Babasahin ito agad ng PackSnap.",
+        "how_2_title": "I-record ang Pag-pack",
+        "how_2_p": "Mag-pack sa ilalim ng camera. Awtomatikong magre-record ang app at papangalanan ang file gamit ang resibo number.",
+        "how_3_title": "Instant Cloud Sync",
+        "how_3_p": "Para sa Pro users, kusang in-upload ang tapos na video sa Google Drive mo. Walang lokal na storage na nasasayang.",
+        "show_title": "Mabilis na Proseso",
+        "show_p1": "Idinisenyo para sa mabilis na pag-pack. Ang Auto-Next feature ay tumutulong sa mga packer na tuluy-tuloy ang trabaho nang hindi hinahawakan ang screen.",
+        "show_p2": "Ligtas na nakaayos ang bawat video kaya madali itong hanapin gamit ang resibo number tuwing may reklamo ang buyer.",
+        "faq_title": "Mga Madalas Itanong (FAQ)",
+        "faq_1_q": "Ano ang PackSnap?",
+        "faq_1_a": "Ang PackSnap ay isang mobile app na ginawa para sa e-commerce sellers para madaling mag-record at mag-ayos ng packing proof videos gamit ang barcode scanning.",
+        "faq_2_q": "Paano gumagana ang Google Drive backup?",
+        "faq_2_a": "Ligtas na kumokonekta ang PackSnap sa iyong Google Drive at awtomatikong ina-upload ang mga video sa 'PackSnap Backups' folder para makatipid sa storage.",
+        "faq_3_q": "Ano ang pinagkaiba ng Libre at Pro?",
+        "faq_3_a": "Ang libreng bersyon ay may ads at lokal na pag-record lang. Ang Pro ay walang ads, may cloud backup, Auto-Next, Auto-Dim, silent recording, loud beep, auto-delete, team management, at reports.",
+        "faq_4_q": "Naka-store ba sa private servers ang mga video ko?",
+        "faq_4_a": "Hindi. Wala sa sariling servers ng PackSnap ang iyong mga video. Direktang napupunta ito mula sa iyong device papunta sa iyong pribadong Google Drive.",
+        "footer_desc": "Binibigyang kapangyarihan ang mga online seller gamit ang matibay na ebidensyang video.",
+        "footer_legal": "Legal",
+        "footer_privacy": "Privacy Policy",
+        "footer_tos": "Terms of Service",
+        "footer_support": "Suporta",
+        "footer_copyright": "© 2026 PackSnap. All rights reserved."
+    },
+    "vi": {
+        "nav_features": "Tính Năng",
+        "nav_how_it_works": "Cách Hoạt Động",
+        "nav_faq": "Câu Hỏi Thường Gặp",
+        "hero_h1": "Công Cụ <span>Bằng Chứng Video</span> Tối Ưu Cho Người Bán Hàng E-Commerce",
+        "hero_p": "Ghi hình, sắp xếp, và tự động sao lưu video bằng chứng đóng gói chỉ bằng cách quét mã vạch. Bảo vệ doanh nghiệp khỏi các khiếu nại gian lận ngay hôm nay.",
+        "hero_cta": "Tải xuống trên Google Play",
+        "feat_title": "Tại Sao Người Bán E-Commerce Chọn PackSnap",
+        "feat_1_title": "Quét Mã Vạch Thông Minh",
+        "feat_1_p": "Chỉ cần quét mã vạch vận đơn trước khi đóng gói. PackSnap tự động đặt tên và phân loại video dựa trên mã vận đơn.",
+        "feat_2_title": "Tự Động Sao Lưu Google Drive",
+        "feat_2_p": "Không còn lo đầy bộ nhớ điện thoại. PackSnap tự động sao lưu các tệp video nặng vào một thư mục riêng trong Google Drive của bạn.",
+        "feat_3_title": "Bảo Vệ Khỏi Gian Lận",
+        "feat_3_p": "Luôn có bằng chứng video cụ thể sẵn sàng để bác bỏ các khiếu nại sai lệch về hàng thiếu hoặc hỏng. Bảo vệ doanh thu của bạn.",
+        "how_title": "PackSnap Hoạt Động Như Thế Nào",
+        "how_1_title": "Quét Mã Vạch",
+        "how_1_p": "Mở camera và quét mã vạch trên kiện hàng. PackSnap sẽ nhận dạng ngay lập tức.",
+        "how_2_title": "Ghi Hình Đóng Gói",
+        "how_2_p": "Đóng gói đơn hàng dưới camera. Ứng dụng tự động ghi hình và đặt tên tệp theo mã vận đơn.",
+        "how_3_title": "Đồng Bộ Đám Mây Tức Thì",
+        "how_3_p": "Dành cho người dùng Pro, video hoàn tất được tự động tải lên thư mục riêng trong Google Drive của bạn. Không làm tốn bộ nhớ điện thoại.",
+        "show_title": "Quy Trình Làm Việc Nhanh Chóng",
+        "show_p1": "Được thiết kế cho các hoạt động đóng gói nhịp độ nhanh. Tính năng Auto-Next cho phép nhân viên tiếp tục làm việc mà không cần chạm vào màn hình.",
+        "show_p2": "Mỗi video được lưu trữ an toàn, dễ dàng tìm kiếm theo mã vận đơn bất cứ khi nào người mua khiếu nại.",
+        "faq_title": "Câu Hỏi Thường Gặp",
+        "faq_1_q": "PackSnap là gì?",
+        "faq_1_a": "PackSnap là ứng dụng di động dành riêng cho người bán hàng e-commerce để dễ dàng ghi hình và quản lý video bằng chứng đóng gói bằng cách quét mã vạch.",
+        "faq_2_q": "Sao lưu Google Drive hoạt động thế nào?",
+        "faq_2_a": "PackSnap kết nối an toàn với Google Drive cá nhân của bạn và tự động tải video lên thư mục 'PackSnap Backups'. Điều này giúp giải phóng dung lượng điện thoại.",
+        "faq_3_q": "Sự khác biệt giữa PackSnap Miễn Phí và Pro là gì?",
+        "faq_3_a": "Bản miễn phí có quảng cáo và lưu video cục bộ. Bản Pro hoàn toàn không quảng cáo, mở khóa tính năng tự động sao lưu, chế độ Auto-Next, màn hình Auto-Dim, tắt tiếng video, cảnh báo bíp to, tự động xóa tệp cũ, quản lý nhóm và báo cáo đóng gói.",
+        "faq_4_q": "PackSnap có lưu trữ video của tôi trên máy chủ riêng không?",
+        "faq_4_a": "Không. PackSnap không lưu trữ video của bạn trên máy chủ của mình. Video bằng chứng của bạn hoàn toàn bảo mật và được chuyển thẳng từ thiết bị lên Google Drive của bạn.",
+        "footer_desc": "Trao quyền cho người bán hàng trực tuyến với bằng chứng video vững chắc.",
+        "footer_legal": "Pháp Lý",
+        "footer_privacy": "Chính Sách Bảo Mật",
+        "footer_tos": "Điều Khoản Dịch Vụ",
+        "footer_support": "Hỗ Trợ",
+        "footer_copyright": "© 2026 PackSnap. Đã đăng ký bản quyền."
+    },
+    "pt": {
+        "nav_features": "Recursos",
+        "nav_how_it_works": "Como Funciona",
+        "nav_faq": "FAQ",
+        "hero_h1": "A Melhor Ferramenta de <span>Prova em Vídeo</span> para Vendedores de E-Commerce",
+        "hero_p": "Grave, organize e faça backup automático de vídeos de embalagem simplesmente escaneando um código de barras. Proteja seu negócio de fraudes hoje mesmo.",
+        "hero_cta": "Baixar no Google Play",
+        "feat_title": "Por Que os Vendedores Escolhem o PackSnap",
+        "feat_1_title": "Leitura Inteligente de Código de Barras",
+        "feat_1_p": "Basta escanear a etiqueta de envio antes de embalar. O PackSnap nomeia e categoriza seu vídeo automaticamente com base no número do rastreio.",
+        "feat_2_title": "Backup Automático no Google Drive",
+        "feat_2_p": "Pare de se preocupar com armazenamento cheio. O PackSnap faz backup contínuo de vídeos pesados em uma pasta dedicada no seu Google Drive.",
+        "feat_3_title": "Proteção Contra Fraudes",
+        "feat_3_p": "Tenha sempre evidências em vídeo prontas para contestar falsas alegações de itens faltando. Proteja a receita e a reputação do seu negócio.",
+        "how_title": "Como o PackSnap Funciona",
+        "how_1_title": "Escaneie a Etiqueta",
+        "how_1_p": "Abra a câmera e escaneie o código de barras no pacote. O PackSnap o lê instantaneamente.",
+        "how_2_title": "Grave a Embalagem",
+        "how_2_p": "Embale o pedido sob a câmera. O app inicia a gravação e nomeia o arquivo automaticamente com o código de rastreio.",
+        "how_3_title": "Sincronização Instantânea na Nuvem",
+        "how_3_p": "Para usuários Pro, o vídeo concluído é automaticamente enviado para o seu Google Drive. Nenhum armazenamento local é desperdiçado.",
+        "show_title": "Fluxo de Trabalho Ágil",
+        "show_p1": "Criado para operações de embalagem em ritmo acelerado. O recurso Auto-Next permite que embaladores trabalhem sem tocar na tela. É só escanear, embalar, e o vídeo é salvo.",
+        "show_p2": "Cada vídeo é organizado com segurança, facilitando a busca pelo código do rastreio sempre que um cliente faz uma reclamação.",
+        "faq_title": "Perguntas Frequentes",
+        "faq_1_q": "O que é o PackSnap?",
+        "faq_1_a": "PackSnap é um app móvel dedicado a vendedores de e-commerce para facilmente gravar e organizar vídeos de embalagem escaneando etiquetas. Ajuda a proteger contra fraudes.",
+        "faq_2_q": "Como funciona o backup no Google Drive?",
+        "faq_2_a": "O PackSnap conecta-se com segurança ao seu Google Drive e envia os vídeos para a pasta 'PackSnap Backups'. Isso economiza o armazenamento do seu celular.",
+        "faq_3_q": "Qual é a diferença entre a versão Grátis e Pro?",
+        "faq_3_a": "A versão grátis tem anúncios e gravação local. A Pro não tem anúncios, desbloqueia backups em nuvem, recurso Auto-Next, Auto-Dim, gravação silenciosa, bipe alto, deleção automática de arquivos antigos, gestão de equipe e relatórios.",
+        "faq_4_q": "O PackSnap armazena meus vídeos em servidores próprios?",
+        "faq_4_a": "Não. O PackSnap não armazena vídeos em seus servidores. Suas evidências são confidenciais e vão direto do seu dispositivo para o seu Google Drive privado.",
+        "footer_desc": "Empoderando vendedores online com evidências em vídeo infalíveis.",
+        "footer_legal": "Legal",
+        "footer_privacy": "Política de Privacidade",
+        "footer_tos": "Termos de Serviço",
+        "footer_support": "Suporte",
+        "footer_copyright": "© 2026 PackSnap. Todos os direitos reservados."
+    },
+    "es": {
+        "nav_features": "Características",
+        "nav_how_it_works": "Cómo Funciona",
+        "nav_faq": "FAQ",
+        "hero_h1": "La Herramienta Definitiva de <span>Prueba en Video</span> para Vendedores de E-Commerce",
+        "hero_p": "Graba, organiza y realiza copias de seguridad automáticas de los videos de embalaje simplemente escaneando un código de barras. Protege tu negocio de fraudes.",
+        "hero_cta": "Descargar en Google Play",
+        "feat_title": "Por Qué los Vendedores Eligen PackSnap",
+        "feat_1_title": "Escaneo Inteligente de Código de Barras",
+        "feat_1_p": "Simplemente escanea la etiqueta de envío antes de empacar. PackSnap nombra y clasifica tu video automáticamente basándose en el número de guía.",
+        "feat_2_title": "Copia de Seguridad en Google Drive",
+        "feat_2_p": "No te preocupes por el almacenamiento lleno. PackSnap respalda automáticamente videos pesados en una carpeta dedicada en tu Google Drive.",
+        "feat_3_title": "Protección Contra Fraudes",
+        "feat_3_p": "Ten siempre evidencia concreta en video para disputar reclamos falsos de artículos faltantes. Asegura tus ingresos y calificación como vendedor.",
+        "how_title": "Cómo Funciona PackSnap",
+        "how_1_title": "Escanea la Etiqueta",
+        "how_1_p": "Abre la cámara y escanea el código de barras en tu paquete. PackSnap lo lee al instante.",
+        "how_2_title": "Graba el Empaque",
+        "how_2_p": "Empaca la orden bajo la cámara. La aplicación comienza a grabar automáticamente y nombra el archivo con el número de guía.",
+        "how_3_title": "Sincronización Instantánea",
+        "how_3_p": "Para usuarios Pro, el video terminado se sube automáticamente a tu Google Drive. No se desperdicia almacenamiento local.",
+        "show_title": "Flujo de Trabajo Ágil",
+        "show_p1": "Diseñado para operaciones de empaque rápidas. La función Auto-Next permite a los empacadores seguir trabajando sin tocar la pantalla. Solo escanea, empaca y el video se guarda.",
+        "show_p2": "Cada video está organizado de manera segura, lo que permite buscar por número de guía cada vez que un comprador presenta una queja.",
+        "faq_title": "Preguntas Frecuentes",
+        "faq_1_q": "¿Qué es PackSnap?",
+        "faq_1_a": "PackSnap es una app móvil dedicada a vendedores de e-commerce para grabar y organizar fácilmente videos de empaque escaneando etiquetas. Ayuda a proteger contra fraudes.",
+        "faq_2_q": "¿Cómo funciona la copia de seguridad en Google Drive?",
+        "faq_2_a": "PackSnap se conecta de forma segura a tu Google Drive y sube los videos a la carpeta 'PackSnap Backups'. Esto ahorra almacenamiento en tu teléfono.",
+        "faq_3_q": "¿Cuál es la diferencia entre la versión Gratis y Pro?",
+        "faq_3_a": "La versión Gratis tiene anuncios y grabación local. La Pro no tiene anuncios, desbloquea respaldos en la nube, función Auto-Next, Auto-Dim, grabación silenciosa, bip fuerte, eliminación automática de archivos antiguos, gestión de equipos y reportes.",
+        "faq_4_q": "¿PackSnap almacena mis videos en servidores privados?",
+        "faq_4_a": "No. PackSnap no almacena tus videos en sus propios servidores. Tu evidencia es confidencial y va directamente desde tu dispositivo a tu Google Drive privado.",
+        "footer_desc": "Empoderando a los vendedores en línea con evidencia en video infalible.",
+        "footer_legal": "Legal",
+        "footer_privacy": "Política de Privacidad",
+        "footer_tos": "Términos de Servicio",
+        "footer_support": "Soporte",
+        "footer_copyright": "© 2026 PackSnap. Todos los derechos reservados."
+    }
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    const defaultLang = 'en';
+    const supportedLangs = ['en', 'id', 'th', 'tl', 'vi', 'pt', 'es'];
+    
+    function getInitialLanguage() {
+        const savedLang = localStorage.getItem('packsnap_lang');
+        if (savedLang && supportedLangs.includes(savedLang)) {
+            return savedLang;
+        }
+        
+        const browserLang = navigator.language.slice(0, 2).toLowerCase();
+        if (browserLang === 'pt') return 'pt';
+        if (browserLang === 'es') return 'es';
+        
+        if (supportedLangs.includes(browserLang)) {
+            return browserLang;
+        }
+        return defaultLang;
+    }
+
+    let currentLang = getInitialLanguage();
+
+    function setLanguage(lang) {
+        if (!supportedLangs.includes(lang)) lang = defaultLang;
+        
+        currentLang = lang;
+        localStorage.setItem('packsnap_lang', lang);
+        document.documentElement.lang = lang;
+        
+        const langSelect = document.getElementById('language-select');
+        if (langSelect) langSelect.value = lang;
+
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (translations[lang] && translations[lang][key]) {
+                if (key === 'hero_h1') {
+                    el.innerHTML = translations[lang][key];
+                } else if (el.tagName === 'SUMMARY') {
+                    el.textContent = translations[lang][key];
+                } else {
+                    // check if there are child nodes that are not text that we need to preserve, like svgs
+                    const childNodes = Array.from(el.childNodes);
+                    const hasElementChildren = childNodes.some(node => node.nodeType === Node.ELEMENT_NODE);
+                    
+                    if (hasElementChildren && el.tagName === 'A' && el.querySelector('svg')) {
+                       // for cta button, it has an SVG icon inside.
+                       const svg = el.querySelector('svg').outerHTML;
+                       el.innerHTML = svg + '\\n                ' + translations[lang][key];
+                    } else {
+                        el.textContent = translations[lang][key];
+                    }
+                }
+            }
+        });
+    }
+
+    const langSelect = document.getElementById('language-select');
+    if (langSelect) {
+        langSelect.addEventListener('change', (e) => {
+            setLanguage(e.target.value);
+        });
+    }
+
+    setLanguage(currentLang);
+});
