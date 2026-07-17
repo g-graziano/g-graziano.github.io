@@ -76,7 +76,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Storage Management",
         "comp_f10_name": "Auto-Dim Screen Mode",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver",
+        "comp_f11_name": "Google Drive Auto-Backup",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "id": {
         "nav_features": "Fitur",
@@ -155,7 +158,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Hemat Memori",
         "comp_f10_name": "Mode Layar Gelap (Auto-Dim)",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Hemat Baterai"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Hemat Baterai",
+        "comp_f11_name": "Cadangan Otomatis Google Drive",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "th": {
         "nav_features": "คุณสมบัติ",
@@ -234,7 +240,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> ประหยัดพื้นที่",
         "comp_f10_name": "โหมดจอมืดอัตโนมัติ",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> ประหยัดแบตเตอรี่"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> ประหยัดแบตเตอรี่",
+        "comp_f11_name": "สำรองข้อมูล Google Drive อัตโนมัติ",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "tl": {
         "nav_features": "Mga Tampok",
@@ -313,7 +322,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Storage Saver",
         "comp_f10_name": "Auto-Dim Screen",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver",
+        "comp_f11_name": "Google Drive Auto-Backup",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "vi": {
         "nav_features": "Tính Năng",
@@ -392,7 +404,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Tiết kiệm bộ nhớ",
         "comp_f10_name": "Chế Độ Màn Hình Tối",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Tiết kiệm pin"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Tiết kiệm pin",
+        "comp_f11_name": "Tự Động Sao Lưu Google Drive",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "pt": {
         "nav_features": "Recursos",
@@ -471,7 +486,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Economia de Armazenamento",
         "comp_f10_name": "Modo Tela Escura (Auto-Dim)",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Economia de Bateria"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Economia de Bateria",
+        "comp_f11_name": "Backup Automático no Google Drive",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     },
     "es": {
         "nav_features": "Características",
@@ -550,7 +568,10 @@ const translations = {
         "comp_f9_pro": "<span class='check-icon'>✓</span> Ahorro de Almacenamiento",
         "comp_f10_name": "Modo Pantalla Oscura",
         "comp_f10_free": "<span class='cross-icon'>✗</span>",
-        "comp_f10_pro": "<span class='check-icon'>✓</span> Ahorro de Batería"
+        "comp_f10_pro": "<span class='check-icon'>✓</span> Ahorro de Batería",
+        "comp_f11_name": "Copia de Seguridad en Google Drive",
+        "comp_f11_free": "<span class='cross-icon'>✗</span>",
+        "comp_f11_pro": "<span class='check-icon'>✓</span>"
     }
 };
 
