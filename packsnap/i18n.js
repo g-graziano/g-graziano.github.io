@@ -80,7 +80,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver",
         "comp_f11_name": "Google Drive Auto-Backup",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Custom Watermark",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "id": {
         "nav_features": "Fitur",
@@ -163,7 +166,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Hemat Baterai",
         "comp_f11_name": "Cadangan Otomatis Google Drive",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Watermark Kustom",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "th": {
         "nav_features": "คุณสมบัติ",
@@ -246,7 +252,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> ประหยัดแบตเตอรี่",
         "comp_f11_name": "สำรองข้อมูล Google Drive อัตโนมัติ",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "ลายน้ำแบบกำหนดเอง",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "tl": {
         "nav_features": "Mga Tampok",
@@ -329,7 +338,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Battery Saver",
         "comp_f11_name": "Google Drive Auto-Backup",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Custom Watermark",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "vi": {
         "nav_features": "Tính Năng",
@@ -412,7 +424,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Tiết kiệm pin",
         "comp_f11_name": "Tự Động Sao Lưu Google Drive",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Đóng Dấu Bản Quyền (Watermark)",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "pt": {
         "nav_features": "Recursos",
@@ -495,7 +510,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Economia de Bateria",
         "comp_f11_name": "Backup Automático no Google Drive",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Marca D'água Personalizada",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     },
     "es": {
         "nav_features": "Características",
@@ -578,7 +596,10 @@ const translations = {
         "comp_f10_pro": "<span class='check-icon'>✓</span> Ahorro de Batería",
         "comp_f11_name": "Copia de Seguridad en Google Drive",
         "comp_f11_free": "<span class='cross-icon'>✗</span>",
-        "comp_f11_pro": "<span class='check-icon'>✓</span>"
+        "comp_f11_pro": "<span class='check-icon'>✓</span>",
+        "comp_f12_name": "Marca de Agua Personalizada",
+        "comp_f12_free": "<span class='cross-icon'>✗</span>",
+        "comp_f12_pro": "<span class='check-icon'>✓</span>"
     }
 };
 
