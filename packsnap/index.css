@@ -488,3 +488,80 @@ footer {
   color: var(--text-muted);
   line-height: 1.6;
 }
+
+/* Pricing / Comparison */
+.pricing {
+  padding: 100px 0;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-header .section-subtitle {
+  color: var(--text-muted);
+  font-size: 1.125rem;
+  margin-top: -40px;
+}
+
+.comparison-table-wrapper {
+  overflow-x: auto;
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(30, 41, 59, 0.4);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 20px 24px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.comparison-table th {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.comparison-table th.plan-free {
+  color: #94a3b8;
+}
+
+.comparison-table th.plan-pro {
+  color: var(--secondary);
+  background: rgba(6, 182, 212, 0.05);
+}
+
+.comparison-table .pro-cell {
+  background: rgba(6, 182, 212, 0.05);
+  font-weight: 600;
+  color: #fff;
+}
+
+.comparison-table .feat-name {
+  color: var(--text-muted);
+  font-weight: 500;
+  width: 40%;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 768px) {
+  .comparison-table th, 
+  .comparison-table td {
+    padding: 15px 12px;
+    font-size: 0.9rem;
+  }
+}
