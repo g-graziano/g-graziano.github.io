@@ -27,10 +27,15 @@ function translateHtml(html, lang) {
     // Set the lang attribute
     translated = translated.replace('<html lang="en">', `<html lang="${lang}">`);
     
-    // Set base path for assets so they point to the root directory
-    if (!translated.includes('<base href="../">')) {
-       translated = translated.replace('<head>', '<head>\\n    <base href="../">');
-    }
+    // Prepend relative paths with ../ so they reference the root directory assets
+    translated = translated.replace(/href="logo\.png"/g, 'href="../logo.png"');
+    translated = translated.replace(/href="icon-192\.png"/g, 'href="../icon-192.png"');
+    translated = translated.replace(/href="manifest\.json"/g, 'href="../manifest.json"');
+    translated = translated.replace(/href="index\.css"/g, 'href="../index.css"');
+    translated = translated.replace(/src="logo\.png"/g, 'src="../logo.png"');
+    translated = translated.replace(/href="privacy-policy\.html"/g, 'href="../privacy-policy.html"');
+    translated = translated.replace(/href="terms-of-service\.html"/g, 'href="../terms-of-service.html"');
+    translated = translated.replace(/src="i18n\.js"/g, 'src="../i18n.js"');
 
     const dict = translations[lang];
     if (!dict) return translated;
