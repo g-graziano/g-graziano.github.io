@@ -127,16 +127,9 @@ function translateHtml(html, lang) {
     for (const key of keys) {
         const text = dict[key];
         
-        let regex;
-        if (key === 'hero_cta') {
-            regex = new RegExp(`(<a[^>]+data-i18n="hero_cta"[^>]*>)([\\s\\S]*?)(</a>)`, 'g');
-        } else if (key === 'hero_h1') {
-            regex = new RegExp(`(<h1[^>]+data-i18n="hero_h1"[^>]*>)([\\s\\S]*?)(</h1>)`, 'g');
-        } else {
-            regex = new RegExp(`(<[^>]+data-i18n="${key}"[^>]*>)([\\s\\S]*?)(</[^>]+>)`, 'g');
-        }
+        const regex = new RegExp(`(<([a-z0-9]+)[^>]*data-i18n="${key}"[^>]*>)([\\s\\S]*?)(</\\2>)`, 'g');
         
-        translated = translated.replace(regex, (match, openTag, content, closeTag) => {
+        translated = translated.replace(regex, (match, openTag, tagName, content, closeTag) => {
             if (openTag.includes('<a ') && openTag.includes('cta-button')) {
                 const svgRegex = /(<svg[\s\S]*?<\/svg>)/;
                 const svgMatch = content.match(svgRegex);
