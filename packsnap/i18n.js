@@ -648,12 +648,12 @@ if (typeof window !== 'undefined') {
             }
         }
         
-        // Set language switcher value
-        const langSelect = document.getElementById('language-select');
-        if (langSelect) {
-            langSelect.value = currentLang;
+        // Set language switcher value for both desktop and mobile
+        const langSelects = document.querySelectorAll('.language-select');
+        langSelects.forEach(select => {
+            select.value = currentLang;
             
-            langSelect.addEventListener('change', (e) => {
+            select.addEventListener('change', (e) => {
                 const selectedLang = e.target.value;
                 localStorage.setItem('packsnap_lang', selectedLang);
                 
@@ -663,6 +663,37 @@ if (typeof window !== 'undefined') {
                     window.location.href = `/packsnap/${selectedLang}/`;
                 }
             });
+        });
+
+        // Mobile Sidebar Toggle Logic
+        const menuToggle = document.getElementById('menu-toggle');
+        const sidebarClose = document.getElementById('sidebarClose');
+        const sidebarOverlay = document.getElementById('sidebarOverlay');
+        const sidebarMenu = document.getElementById('sidebarMenu');
+        const sidebarLinks = document.querySelectorAll('.sidebar-nav a');
+
+        function openSidebar() {
+            if (sidebarMenu && sidebarOverlay) {
+                sidebarMenu.classList.add('active');
+                sidebarOverlay.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
         }
+
+        function closeSidebar() {
+            if (sidebarMenu && sidebarOverlay) {
+                sidebarMenu.classList.remove('active');
+                sidebarOverlay.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (menuToggle) menuToggle.addEventListener('click', openSidebar);
+        if (sidebarClose) sidebarClose.addEventListener('click', closeSidebar);
+        if (sidebarOverlay) sidebarOverlay.addEventListener('click', closeSidebar);
+        
+        sidebarLinks.forEach(link => {
+            link.addEventListener('click', closeSidebar);
+        });
     });
 }

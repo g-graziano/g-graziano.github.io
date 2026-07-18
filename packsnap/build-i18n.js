@@ -154,7 +154,7 @@ function translateHtml(html, lang) {
     // Since select element doesn't have an easy regex replacement for the selected option,
     // we can add `selected` to the correct option.
     translated = translated.replace(/(<option value="[a-z]{2}")( selected)?( style="color: black;">)/g, '$1$3'); // clear existing
-    translated = translated.replace(new RegExp(`(<option value="${lang}")`), '$1 selected');
+    translated = translated.replace(new RegExp(`(<option value="${lang}")`, 'g'), '$1 selected');
 
     return translated;
 }

@@ -108,12 +108,12 @@
                 <img src="../logo.png" alt="PackSnap Logo" class="logo-img">
                 <div class="logo-text">PackSnap</div>
             </div>
-            <nav style="display: flex; align-items: center; gap: 20px;">
+            <nav class="nav-desktop">
                 <a href="#features" data-i18n="nav_features">คุณสมบัติ</a>
                 <a href="#how-it-works" data-i18n="nav_how_it_works">วิธีการทำงาน</a>
                 <a href="#pricing" data-i18n="nav_pricing">แพ็คเกจ</a>
                 <a href="#faq" data-i18n="nav_faq">คำถามที่พบบ่อย</a>
-                <select id="language-select" aria-label="เลือกภาษา" style="background: rgba(255, 255, 255, 0.1); color: white; border: 1px solid rgba(255, 255, 255, 0.2); border-radius: 4px; padding: 4px 8px; margin-left: 1rem; cursor: pointer; outline: none;">
+                <select id="language-select" class="language-select" aria-label="เลือกภาษา">
                     <option value="en" style="color: black;">English</option>
                     <option value="id" style="color: black;">Bahasa Indonesia</option>
                     <option value="th" selected style="color: black;">ภาษาไทย</option>
@@ -123,8 +123,44 @@
                     <option value="es" style="color: black;">Español</option>
                 </select>
             </nav>
+            <button id="menu-toggle" class="menu-toggle" aria-label="Open Menu">
+                <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
         </div>
     </header>
+
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+    <aside class="sidebar" id="sidebarMenu">
+        <button class="sidebar-close" id="sidebarClose" aria-label="Close Menu">
+            <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+        <nav class="sidebar-nav">
+            <a href="#features" data-i18n="nav_features">คุณสมบัติ</a>
+            <a href="#how-it-works" data-i18n="nav_how_it_works">วิธีการทำงาน</a>
+            <a href="#pricing" data-i18n="nav_pricing">แพ็คเกจ</a>
+            <a href="#faq" data-i18n="nav_faq">คำถามที่พบบ่อย</a>
+            <div class="sidebar-divider"></div>
+            <div class="sidebar-lang-container">
+                <label for="language-select-mobile" class="sidebar-label" data-i18n="aria_lang_select">เลือกภาษา</label>
+                <select id="language-select-mobile" class="language-select" aria-label="เลือกภาษา">
+                    <option value="en" style="color: black;">English</option>
+                    <option value="id" style="color: black;">Bahasa Indonesia</option>
+                    <option value="th" selected style="color: black;">ภาษาไทย</option>
+                    <option value="tl" style="color: black;">Tagalog (Filipinas)</option>
+                    <option value="vi" style="color: black;">Tiếng Việt</option>
+                    <option value="pt" style="color: black;">Português (Brasil)</option>
+                    <option value="es" style="color: black;">Español</option>
+                </select>
+            </div>
+        </nav>
+    </aside>
 
     <main>
         <section class="hero container">
